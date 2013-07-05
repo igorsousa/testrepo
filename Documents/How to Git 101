@@ -18,9 +18,9 @@ Simplificar push:
 	push -u origin @nomedobranch
 	git push
 
-Adicionar ficheiro à stage:
+Adicionar ficheiro à stage (Stage é o conjunto de ficheiros que monitorizar/pretendemos adicionar ao repositorio):
 	git add @path/ficheiro
-
+Remover um ficheiro da stage
 Commit a tudo atualmente na stage:
 	git commit -m "@Comentario que descreverá o commit"
 
