@@ -1,0 +1,27 @@
+Inicializar:
+	git init
+
+Registar utililizador para Push:
+	git config --global user.email "@email"
+	git config --global user.name "@nome"
+
+Estabelecer repositorio remoto
+	git remote add origin @url_repositorio
+
+Push/Pull (Enviar para repositorio remoto/ir buscar a repositorio remoto)
+	git pull origin @nomedebranch (por omissão: master)
+	git push origin @nomedebranch (por omissão: master)
+
+Simplificar push:
+	git config --global push.default simple
+	//Ao fazer push git. isto irá tornar o @nomedobranch o branch por omissão e basta utilizar "git push" para fazer push para esse branch automaticamente
+	push -u origin @nomedobranch
+	git push
+
+Adicionar ficheiro à stage:
+	git add @path/ficheiro
+
+Commit a tudo atualmente na stage:
+	git commit -m "@Comentario que descreverá o commit"
+
+
