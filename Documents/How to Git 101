@@ -1,11 +1,15 @@
-Inicializar:
+Inicializar um repositorio no diretorio local. Caso não existe repositorio no diretorio atual, é criado um. Para trocar de repositporio, ir a um diretoio que tenha um repositorio e usar o commando novamente:
 	git init
+
+Para ver que ficheiros foram alterados/adicionados/eliminados no repositorio local:
+	git status
+	git status -sb (opção menos verbose)
 
 Registar utililizador para Push:
 	git config --global user.email "@email"
 	git config --global user.name "@nome"
 
-Estabelecer repositorio remoto
+Estabelecer o repositorio remoto
 	git remote add origin @url_repositorio
 
 Push/Pull (Enviar para repositorio remoto/ir buscar a repositorio remoto)
@@ -19,8 +23,10 @@ Simplificar push:
 	git push
 
 Adicionar ficheiro à stage (Stage é o conjunto de ficheiros que monitorizar/pretendemos adicionar ao repositorio):
-	git add @path/ficheiro
+	git add @ficheiro
+
 Remover um ficheiro da stage
+	git reset @ficheiro
 Commit a tudo atualmente na stage:
 	git commit -m "@Comentario que descreverá o commit"
 
